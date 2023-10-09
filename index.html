@@ -34,17 +34,17 @@
 
 <body class="dark:text-white dark:bg-[#191919]">
 
-    <nav class="py-4 mx-4">
+    <nav class="mx-4">
         <div class="container flex justify-between font-roboto-slab">
-            <a href="./index.html" class="text-2xl font-bold">GD</a>
-            <div class="space-x-2">
-                <a href="./profile.html">Profile</a>
-                <a href="./projects.html">Projects</a>
+            <a href="./index.html" class="py-4 text-2xl font-bold">GD</a>
+            <div class="flex items-center space-x-2">
+                <a href="./profile.html" class="px-1 py-4">Profile</a>
+                <a href="./projects.html" class="px-1 py-4">Projects</a>
                 <button class="w-8 h-8 border-2 border-black rounded-lg dark:border-white theme-button"><i
                         class="fa-solid fa-circle-half-stroke"></i></button>
             </div>
         </div>
-        <div class="container flex mt-4">
+        <div class="container flex">
             <div class="w-5/12 h-2 bg-accent-1"></div>
             <div class="w-3/12 h-2 bg-accent-2"></div>
             <div class="w-2/12 h-2 bg-accent-3"></div>
@@ -55,30 +55,38 @@
     <main class="mx-4">
 
         <section class="container mt-10">
-            <h1 class="mb-4 text-3xl font-bold uppercase font-roboto-slab">creative.</h1>
+            <!-- <h1 class="mb-8 text-3xl font-bold uppercase font-roboto-slab">👋 Hey, I'm Grzegorz!</h1> -->
+            <h1 class="mb-8 text-3xl font-bold uppercase font-roboto-slab">i love making things.</h1>
             <p class="mb-4 text-xl leading-6 font-rubik">Hey, I'm Grzegorz. I've worked as a game designer at Jujubee
                 and QA
                 Lead and Project
                 Manager at
                 Keywords Studios - now taking my experiences into Frontend Development and React.</p>
 
-            <div class="space-x-4 text-md font-rubik">
-                <a href="https://github.com/dziabak" target="_blank" rel="noopener">
+            <div class="space-x-6 text-lg font-medium font-rubik">
+                <a href="https://github.com/dziabak" target="_blank" rel="noopener"
+                    class="transition-colors duration-200 hover:text-slate-600">
                     <i class="mr-1 fa-brands fa-github"></i>GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/grzegorz-d%C4%85browski-7b78271b5/" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/grzegorz-d%C4%85browski-7b78271b5/" target="_blank" rel="noopener"
+                    class="transition-colors duration-200 hover:text-blue-600">
                     <i class="mr-1 fa-brands fa-linkedin"></i>LinkedIn
                 </a>
-                <a href="https://gdd.itch.io/" target="_blank" rel="noopener">
+                <a href="https://gdd.itch.io/" target="_blank" rel="noopener"
+                    class="transition-colors duration-200 hover:text-red-400">
                     <i class="mr-1 fa-brands fa-itch-io"></i>itch.io
                 </a>
             </div>
 
             <div
                 class="flex flex-col mt-16 mb-16 space-y-6 text-sm font-medium text-center uppercase font-rubik sm:flex-row sm:space-y-0 sm:space-x-6">
-                <a href="./profile.html" class="px-12 py-3 rounded-md outline outline-3 bg-accent-4">view my profile</a>
+                <a href="./profile.html"
+                    class="px-12 py-3 duration-200 rounded-md outline outline-3 bg-accent-4 sm:w-1/2 hover:bg-accent-3 dark:text-slate-600">view
+                    my
+                    profile</a>
                 <a href="./files/CV_GRZEGORZ_DABROWSKI.pdf" download
-                    class="px-8 py-3 rounded-md outline outline-3">download my resume</a>
+                    class="px-8 py-3 duration-200 rounded-md outline outline-3 sm:w-1/2 hover:bg-accent-3">download my
+                    resume</a>
             </div>
         </section>
 
@@ -86,54 +94,57 @@
         <section class="container space-y-6">
             <p class="text-2xl font-bold uppercase font-roboto-slab">projects</p>
 
-            <div class="flex space-x-6">
-                <img src="../img/the-podcast-show.png" alt="" class="w-1/2">
+            <a href="#" class="flex space-x-6">
+                <img src="./img/the-podcast-show.png" alt="" class="w-1/2">
                 <div class="w-1/2 font-rubik">
                     <p class="mb-2 text-xl font-medium uppercase">the podcast show</p>
                     <p class="mb-2 text-sm">"The Podcast Show" website is a dynamic platform that hosts a diverse
                         collection
                         of
                         engaging and informative podcasts across various genres and topics.</p>
-                    <a href="#" class="">Read more →</a>
+                    <p>Read more →</p>
                 </div>
-            </div>
+            </a>
 
 
-            <div class="flex space-x-6">
-                <img src="../img/veed-io.png" alt="" class="w-1/2">
+            <a href="#" class="flex space-x-6">
+                <img src="./img/veed-io.png" alt="" class="w-1/2">
                 <div class="w-1/2 font-rubik">
                     <p class="mb-2 text-xl font-medium uppercase">veed.io</p>
                     <p class="mb-2 text-sm">"Veed.io" is a versatile online video editing platform that empowers users
                         to
                         effortlessly edit and enhance videos with a user-friendly interface.</p>
-                    <a href="#">Read more →</a>
+                    <p>Read more →</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="flex space-x-6">
-                <img src="../img/workhub.png" alt="" class="w-1/2">
+            <a href="#" class="flex space-x-6">
+                <img src="./img/workhub.png" alt="" class="w-1/2">
                 <div class="w-1/2 font-rubik">
                     <p class="mb-2 text-xl font-medium uppercase">workhub</p>
                     <p class="mb-2 text-sm">"Workhub" is an integrated digital workspace solution that streamlines
                         collaboration and project management for teams, boosting productivity and organization.</p>
-                    <a href="#">Read more →</a>
+                    <p>Read more →</p>
                 </div>
-            </div>
+            </a>
         </section>
 
     </main>
 
     <footer class="mx-4 mt-12 mb-6 ">
-        <div class="container flex justify-between text-xs font-rubik">
-            <p class="">© GD</p>
+        <div class="container flex justify-between text-md font-rubik">
+            <p class="font-medium">© GD</p>
             <div class="space-x-1">
-                <a href="#" class="">
+                <a href="https://github.com/dziabak" target="_blank" rel="noopener"
+                    class="transition-colors duration-200 hover:text-slate-600">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="#" class="">
+                <a href="https://www.linkedin.com/in/grzegorz-d%C4%85browski-7b78271b5/" target="_blank" rel="noopener"
+                    class="transition-colors duration-200 hover:text-blue-600">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#" class="">
+                <a href="https://gdd.itch.io/" target="_blank" rel="noopener"
+                    class="transition-colors duration-200 hover:text-red-400">
                     <i class="fa-brands fa-itch-io"></i>
                 </a>
             </div>
