@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile-page</title>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/21e2a57b93.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+</head>
+
+<body class="dark:text-white dark:bg-[#191919]">
+
+    <nav class="py-4 mx-4">
+        <div class="container flex justify-between font-roboto-slab">
+            <a href="./index.html" class="text-2xl font-bold">GD</a>
+            <div class="space-x-2">
+                <a href="./profile.html">Profile</a>
+                <a href="./projects.html">Projects</a>
+                <button class="w-8 h-8 border-2 border-black rounded-lg dark:border-white theme-button"><i
+                    class="fa-solid fa-circle-half-stroke"></i></button>
+            </div>
+        </div>
+        <div class="container flex mt-4">
+            <div class="w-5/12 h-2 bg-accent-1"></div>
+            <div class="w-3/12 h-2 bg-accent-2"></div>
+            <div class="w-2/12 h-2 bg-accent-3"></div>
+            <div class="w-2/12 h-2 bg-accent-4"></div>
+        </div>
+    </nav>
+
+    <main class="mx-4">
+
+        <section class="container mt-10">
+            <h1 class="mb-4 text-3xl font-bold uppercase font-roboto-slab">profile</h1>
+            <p class="mb-4 text-xl leading-6 font-rubik">Hey, I'm Grzegorz. I've worked as a game designer at Jujubee
+                and QA
+                Lead and Project
+                Manager at
+                Keywords Studios - now taking my experiences into Frontend Development and React.</p>
+            <p class="mb-4 text-xl leading-6 font-rubik">Throughout my career as a Game Developer, I've always been attracted to UI and UX and I
+                was able to translate
+                that into real projects and products.</p>
+            <p class="mb-4 text-xl leading-6 font-rubik">I love telling stories and I sometimes publish my games on itch.io.</p>
+
+            <div
+                class="flex flex-col mt-16 mb-16 space-y-6 text-sm font-medium text-center uppercase font-rubik sm:flex-row sm:space-y-0 sm:space-x-6">
+                <a href="./files/CV_GRZEGORZ_DABROWSKI.pdf" download class="px-12 py-3 rounded-md outline outline-3 bg-accent-4">download my resume</a>
+            </div>
+        </section>
+
+
+        <section class="container space-y-8">
+            <p class="text-2xl font-bold uppercase font-roboto-slab">experience</p>
+
+            <div class="space-y-4 font-rubik">
+                <div class="flex items-end space-x-2">
+                    <p class="text-xl font-medium uppercase">Keywords Studios</p>
+                    <p class="text-sm">(2019 - 2023)</p>
+                </div>
+                <p class="text-md">Only a month after the FQA branch was opened, I joined the team of around 40
+                    testers
+                    and
+                    throughout 4 years I've helped to build the studio to become one of the largest FQA outsource
+                    studios in
+                    Europe.</p>
+                <p class="text-md">As an FQA Lead and Project Manager I took part in working with our strategic
+                    partners
+                    and
+                    clients to provide the best testing strategies for their products and execute them.</p>
+                <p class="text-md">I've worked on
+                    numerous projects on all console platforms, PC and mobiles.</p>
+            </div>
+
+            <div class="space-y-4 font-rubik">
+                <div class="flex items-end space-x-2">
+                    <p class="text-xl font-medium uppercase">Jujubee S.A.</p>
+                    <p class="text-sm">(2017 - 2019)</p>
+                </div>
+                <p class="text-md">During my time at the studio I've helped to ship three projects: Take Off, Truck
+                    Simulation 19 and Deep Diving Simulator.</p>
+                <p class="text-md">As a Game Designer I was able to learn and work on a variety of features and
+                    areas of
+                    the projects - including working on the UI and UX as well as preparing the projects for their
+                    release.</p>
+            </div>
+
+            <p class="text-2xl font-bold uppercase font-roboto-slab">education</p>
+
+            <div class="space-y-4 font-rubik">
+                <div class="flex items-end space-x-2">
+                    <p class="text-xl font-medium uppercase">Game Design Course <span class="font-normal normal-case">at University of Silesia</span></p>
+                    <p class="text-sm">(2012 - 2017)</p>
+                </div>
+                <p class="text-md">I've finished the first Game Design course in Poland with a master's degree,
+                    which gave me a handful of critical and creative thinking skills, a practical copy-writing knowledge
+                    as well as design oriented approach to product development and technical knowledge for visual
+                    scripting and working with video game engines, such as Unity and Unreal Engine 4.</p>
+            </div>
+
+            <div class="space-y-4 font-rubik">
+                <div class="flex items-end space-x-2">
+                    <p class="text-xl font-medium uppercase">more about me</p>
+                </div>
+                <p class="text-md">You can find some of my frontend projects on GitHub and my games on itch.io.</p>
+            </div>
+
+           
+
+        </section>
+
+    </main>
+
+    <footer class="mx-4 mt-12 mb-6 ">
+        <div class="container flex justify-between text-xs font-rubik">
+            <p class="">© GD</p>
+            <div class="space-x-1">
+                <a href="#" class="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
